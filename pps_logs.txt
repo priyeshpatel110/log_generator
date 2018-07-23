@@ -1,0 +1,39 @@
+{{date}} {{hour}}:{{mts}}:{{sec}}.{{msec}} [CatalogResource] [qtp793186359-498]:  AUDIT- INFO: [{{flowcontext}}] Host:{{host}} | Type:HTTP | Status:Success | SourceName:172.30.175.204 | SourcePort:56475 | Method:POST | URL:http://{{host}}:6060/pps/households/householdone/bookings | ResponseStatusCode:201 | ResponseContentLength:-1 | DS:{{ds}}ms | MongoDriver:{{mongo}}ms | TMS:{{tms}}ms | HC:{{hc}}ms | Total:{{total}}ms
+
+{{date}} {{hour}}:{{mts}}:{{sec}}.{{msec}} [CatalogResource] [qtp793186359-498]:  AUDIT- ERROR: [{{flowcontext}}] Host:{{host}} | Type:HTTP | Status:Success | SourceName:172.30.175.204 | SourcePort:56475 | Method:POST | URL:http://{{host}}:6060/pps/households/householdone/bookings | ResponseStatusCode:404 | ResponseBody:{{"code":"PPS.403.004.002","message":"Forbidden - missing metadata","flowContext":"{{flowcontext}}"}} | ResponseContentLength:2 | DS:{{ds}}ms | MongoDriver:{{mongo}}ms | TMS:{{tms}}ms | HC:{{hc}}ms | Total:{{total}}ms
+
+{{date}} {{hour}}:{{mts}}:{{sec}}.{{msec}} [CatalogItemResource] [qtp793186359-571]:  AUDIT- INFO: [{{flowcontext}}] Host:{{host}} | Type:HTTP | Status:Success | SourceName:172.30.175.204 | SourcePort:56467 | Method:GET | URL:http://{{host}}:6060/pps/households/householdtwo/catalog/56ce4430c98f9e0d56882bee?tstvUsage=restart | ResponseStatusCode:200 | ResponseContentLength:1035 | MongoDriver:{{mongo}}ms | DS:{{ds}}ms | HC:{{hc}}ms | Total:{{total}}ms
+
+{{date}} {{hour}}:{{mts}}:{{sec}}.{{msec}} [CatalogResource] [qtp793186359-578]:  AUDIT- INFO: [{{flowcontext}}] Host:{{host}} | Type:HTTP | Status:Success | SourceName:192.168.4.23 | SourcePort:44994 | Method:GET | URL:http://securegw.get.no:3509/pps/households/46030899/catalog?filter:type=LINEAR-RECORDING&filter:type=REMINDER&filter:adult=false&lang=nor | ResponseStatusCode:200 | ResponseContentLength:2 | UPM:{{upm}}ms | MongoDriver:{{mongo}}ms | DS:{{ds}}ms | Total:{{total}}ms   
+
+{{date}} {{hour}}:{{mts}}:{{sec}}.{{msec}} [CatalogItemResource] [qtp793186359-555]:  AUDIT- ERROR: [{{flowcontext}}] Host:{{host}} | Type:HTTP | Status:Failure | SourceName:172.30.175.204 | SourcePort:35434 | Method:GET | URL:http://{{host}}:6060/pps/households/householdone/catalog/{{catalog_id}}?tstvUsage=catchup | ResponseStatusCode:404 | ResponseBody:{"code":"PPS.404.001","message":"resource does not exist. couldn't find catalog-item  with id:{{catalog_id}}","flowContext":"{{flowcontext}}"} | MongoDriver:{{mongo}}ms | Total:{{total}}ms
+
+{{date}} {{hour}}:{{mts}}:{{sec}}.{{msec}} [BaselineSyncScheduler] [BaselineSyncRunner-9]: AUDIT- INFO: [{{flowcontext}}] Host:{{host}} | Type:Scheduler | Status:Success | SchedulerName:CheckOfflinePvrs | HandledType:pvr | HandledNumber:0 | Failures:0 | MongoDriver:{{mongo}}ms | Total:{{total}}ms
+
+{{date}} {{hour}}:{{mts}}:{{sec}}.{{msec}} [BaselineSyncScheduler] [BaselineSyncRunner-9]:  AUDIT- INFO: [{{flowcontext}}] Host:{{host}} | Type:Scheduler | Status:Success | SchedulerName:SendBaselineRequest | HandledType:pvr | HandledNumber:0 | Failures:0 | Total:{{total}}ms
+
+{{date}} {{hour}}:{{mts}}:{{sec}}.{{msec}} [RequestTransactionTimeOutScheduler] [RequestTransactionTimeOutRunner-1]:  AUDIT- INFO: [{{flowcontext}}] Host:{{host}} | Type:Scheduler | Status:Success | SchedulerName:RequestTransactionTimeOut | HandledType:transaction | HandledNumber:0 | Failures:0 | MongoDriver:{{mongo}}ms | Total:{{total}}ms
+
+{{date}} {{hour}}:{{mts}}:{{sec}}.{{msec}} [RecordingsScheduler] [recordingsSchedulerRunner-3]:  AUDIT- INFO: [{{flowcontext}}] Host:{{host}} | Type:Scheduler | Status:Success | SchedulerName:RecordingsScheduler | HandledType:catalogItem | HandledNumber:0 | Failures:0 | MongoDriver:{{mongo}}ms | Total:{{total}}ms
+
+{{date}} {{hour}}:{{mts}}:{{sec}}.{{msec}} [UpmMessageListenerUtil] [pool-16-thread-48]:  AUDIT- INFO: [{{flowcontext}}] Host:{{host}} | Type:HornetQ | Status:Success | NotificationType:UPDATE_HOUSEHOLD_LOCALE | DS:{{ds}}ms | MongoDriver:{{mongo}}ms | Total:{{total}}ms
+
+{{date}} {{hour}}:{{mts}}:{{sec}}.{{msec}} [UpmMessageListenerUtil] [pool-16-thread-26]:  AUDIT- INFO: [{{flowcontext}}] Host:{{host}} | Type:HornetQ | Status:Success | NotificationType:DELETE_AUTHORIZATION | Total:{{total}}ms 
+
+{{date}} {{hour}}:{{mts}}:{{sec}}.{{msec}} [UpmMessageListenerUtil] [pool-16-thread-21]:  AUDIT- INFO: [{{flowcontext}}] Host:{{host}} | Type:HornetQ | Status:Success | NotificationType:CREATE_HOUSEHOLD | DS:{{ds}}ms | Total:{{total}}ms
+
+{{date}} {{hour}}:{{mts}}:{{sec}}.{{msec}} [CatalogResource] [qtp793186359-507]:  AUDIT- INFO: [{{flowcontext}}] Host:{{host}} | Type:HTTP | Status:Success | SourceName:192.168.4.24 | SourcePort:33994 | Method:GET | URL:http://securegw.get.no:3509/pps/households/45246686/vod-assets?catalogueId=16000&lang=nor&sort=title&filter:adult=false&pset=cd_standard | ResponseStatusCode:200 | ResponseContentLength:2 | UPM:{{upm}}ms | Total:{{total}}ms
+
+{{date}} {{hour}}:{{mts}}:{{sec}}.{{msec}} [CatalogResource] [qtp793186359-575]:  AUDIT- ERROR: [{{flowcontext}}] Host:{{host}} | Type:HTTP | Status:Failure | SourceName:192.168.4.23 | SourcePort:24717 | Method:GET | URL:http://securegw.get.no:3509/pps/households/80685101/vod-assets?catalogueId=16000&pset=cd_standard&lang=nor&filter:adult=false | ResponseStatusCode:403 | ResponseBody:{"code":"PPS.403.004","message":"Forbidden","flowContext":"{{flowcontext}}"} | UPM:{{upm}}ms | Total:{{total}}ms 
+
+{{date}} {{hour}}:{{mts}}:{{sec}}.{{msec}} [EventReportingResource] [qtp889398176-376]:  AUDIT- INFO: [{{flowcontext}}] Host:{{host}} | Type:HTTP | Status:Success | SourceName:192.168.4.22 | SourcePort:46334 | Method:PUT | URL:http://securegw.get.no:3509/eventReporting/3343807485 | ResponseStatusCode:200 | ResponseContentLength:-1 | UPM:{{upm}}ms | DS:{{ds}}ms | MongoDriver:{{mongo}}ms | TMS:{{tms}}ms | HC:{{hc}}ms | Total:{{total}}ms
+
+{{date}} {{hour}}:{{mts}}:{{sec}}.{{msec}} [BrowseResponseResource] [qtp889398176-413]:  AUDIT- INFO: [{{flowcontext}}] Host:{{host}} | Type:HTTP | Status:Success | SourceName:192.168.4.22 | SourcePort:34137 | Method:PUT | URL:http://securegw.get.no:3509/browseResponse/3343927766/diskSpace | ResponseStatusCode:200 | ResponseContentLength:-1 | UPM:{{upm}}ms | DS:{{ds}}ms | Total:{{total}}ms  
+  
+{{date}} {{hour}}:{{mts}}:{{sec}}.{{msec}} [NpvrNotificationResource] [qtp1246023616-270]:  AUDIT- INFO: [{{flowcontext}}] Host:{{host}} | Type:HTTP | Status:Success | SourceName:84.210.206.136 | SourcePort:60364 | Method:POST | URL:http://{{host}}:6053/pps/npvr/rmssNotification | ResponseStatusCode:200 | ResponseContentLength:-1 | DS:{{mongo}}ms | MongoDriver:{{mongo}}ms | TMS:{{tms}}ms | Total:{{total}}ms
+
+
+
+
+
+

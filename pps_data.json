@@ -1,0 +1,77 @@
+{
+  "host" :
+     {
+       "type" : "string",
+       "selection" : "pps1a,pps1b"
+     },
+  "hc" : 
+     {
+       "min" : 10,
+       "max" : 20,
+       "type" : "integer"
+     },
+   "flowcontext" :
+     {
+       "type" : "uuid",
+       "length" : 24
+     },
+  "total" :
+     {
+       "type" : "integer",
+       "min" : 100,
+       "max" : 200
+     },
+  "mongo" :
+    {
+       "min" : 10,
+       "max" : 20,
+       "type" : "integer"
+    },
+   "tms" :
+    {
+       "min" : 10,
+       "max" : 20,
+       "type" : "integer"
+    },
+   "upm" :
+    {
+       "min" : 10,
+       "max" : 20,
+       "type" : "integer"
+    },
+   "ds" :
+    {
+       "min" : 10,
+       "max" : 20,
+       "type" : "integer"
+    },
+   "catalog_id" :
+    {
+       "type" : "uuid",
+       "length" : 24
+    },
+   "hour" :
+    {
+       "min" : 0,
+       "max" : 23,
+       "type" : "integer"
+   },
+   "mts" :
+    {
+       "min" : 0,
+       "max" : 59,
+       "type" : "integer"
+    },
+   "sec" :
+    {
+       "min" : 0,
+       "max" : 59,
+       "type" : "integer"
+    },
+    "msec" :
+    {
+       "min" : 0,
+       "max" : 999,
+       "type" : "integer"
+    }
+}
